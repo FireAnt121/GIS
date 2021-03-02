@@ -1,0 +1,169 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ #mapid{
+    position: absolute;
+    top:0;
+    margin:0;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+
+ }
+ .leaflet-popup-content-wrapper{
+    background: transparent !important;
+    color:#fff !important;
+    box-shadow: none !important;
+ }
+ .leaflet-popup-content-wrapper p{
+   font-size: 1rem;
+   text-shadow: 0 0 6px #000;
+ }
+ .leaflet-popup-tip-container{
+    display: none;
+ }
+ .leaflet-fade-anim .leaflet-map-pane .leaflet-popup{
+    bottom:-50px !important;
+ }
+
+ .leaflet-tooltip{
+   background: transparent !important;
+   color:#fff !important;
+   box-shadow: none !important;
+   border:none !important;
+ }
+
+ .leaflet-tooltip:before{
+    display:none;
+ }
+
+ .leaflet-tooltip p{
+   font-size: 1rem;
+   text-shadow: 0 0 6px #000;
+ }
+
+ .leaflet-tooltip-left {
+   margin-left: 50px !important;
+}
+
+.leaflet-tooltip-right {
+   margin-left: -50px !important;
+}
+.leaflet-tooltip-pane .leaflet-tooltip:last-child{
+   margin-left: -100px !important;
+}
+
+#mapid-content{
+   height: 90vh;
+   width: 100%;
+   max-width: 300px;
+   background: #fff;
+   position: absolute;
+   top: 0;
+   padding: 1rem;
+   border-radius: 15px;
+   box-shadow: 0 0 20px #96d9ff;
+   margin: 2rem 0 0 3rem;
+   z-index: 900;
+}
+#mapinner-content{
+   width: 100%;
+    height: 100vh;
+    background: #21759ba3;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mapinner-content .fire-close{
+   position: absolute;
+   top: 100px;
+   right: 100px;
+   cursor:pointer;
+}
+#mapinner-content .fire-close span:first-child{
+   background: #fff;
+   width: 100px;
+   height: 10px;
+   display: block;
+   transform: rotate(45deg);
+}
+#mapinner-content .fire-close span:last-child{
+   background: #fff;
+   width: 100px;
+   height: 10px;
+   display: block;
+   transform: rotate(-45deg);
+}
+#mapinner-content .fire-close:hover span{
+   background: #000;
+}
+#mapinner-content .inner-content-box{
+   width: 80%;
+    height: 70vh;
+    background: aliceblue;
+    overflow-y: scroll;
+}
+.fireBoxes{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.fireBoxes p{
+   width:100%;
+   background: turquoise;
+   padding: 5px 20px;
+   margin:1px;
+   color: #fff;
+   border-radius: 15px;
+}
+.fireBoxes p span{
+   float:right;
+}
+.fireBoxes h3{
+   font-size: 1.5rem;
+   min-width: 100%;
+   margin-bottom: 10px;
+}
+.fireBoxes h4{
+   font-size: 1.25rem;
+   min-width: 100%;
+   margin-bottom: 15px;
+   font-weight: 500;
+}
+#VIEWwards{
+   color: turquoise;
+   background: #fff;
+   cursor: pointer;
+}
+.leaflet-control-container .leaflet-top.leaflet-left{
+   right: 50px;
+   left: auto;
+   top: auto;
+   bottom: 100px;
+}
+main #mapid.leaflet-touch .leaflet-control-container  a.leaflet-control-zoom-in{
+   margin-bottom: 20px;
+}
+main #mapid.leaflet-touch .leaflet-control-container  a.leaflet-control-zoom-in,main #mapid.leaflet-touch .leaflet-control-container  a.leaflet-control-zoom-out{
+   width: 50px;
+   height: 50px;
+   font-size: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   line-height: 1;
+   border-radius: 50px;
+   border: none;
+   box-shadow: 0 0 20px #96d9ff;
+}
+main #mapid.leaflet-touch .leaflet-bar{
+   border:none;
+}
